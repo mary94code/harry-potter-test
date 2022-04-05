@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/img-bg2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+/*buttons styles*/
+
+
+.btn-open,
+.btn-close {
+    position: absolute;
+    top: 30%;
+}
+
+.btn-close {
+    right: 20%;
+}
+.btn-open{
+    left: 20%;
+}
+.btn-rhombus {
+    width: 75px;
+    height: 75px;
+    margin-top: 100px;
+    transform: rotate(45deg);
+    background-color: rgb(104, 26, 26);
+    border: none;
+    cursor: pointer;
+}
+
+.transform {
+    transform: rotate(-45deg);
+    background-color: rgb(104, 26, 26);
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    font-family: 'Tangerine', cursive;
+    font-size: 25px;
+}
+
+.right {
+    right: 12%;
+    bottom: 33%;
+}
+
+.left {
+    left: 7%;
+    bottom: 43%;
+}
+
+/*main styles*/
+.cont-main {
+    background-color: rgba(148, 117, 14, 0.9);
+    width: 392px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(75, 12, 12);
+    transition: all 5s ease-in-out;
+}
+
+.middle-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.shoe-prints {
+    position: absolute;
+    transform: rotate(270deg);
+}
+
+.user-img {
+    width: 170px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.line {
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Tangerine', cursive;
+}
+
+.title {
+    font-size: 28px;
+}
+
+.links1,
+.links2 {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.links-portfolio {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(75, 12, 12);
+}
+
+.icons {
+    color: rgb(75, 12, 12);
+    font-size: 25px;
+}
+
+/* sliders styles*/
+.sliders {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    transition: all 5s ease-in-out;
+    
+}
+
+.parts {
+    width: 90%;
+}
+
+ .part-1 {
+    position: absolute;
+    transition: all 1.5s ease-in-out;
+    top: -180px;
+    width: 100%;
+} 
+
+.part-2 {
+    position: absolute;
+    top: 298px;
+    transition: all 1.5s ease-in-out;
+    width: 100%;
+}
+
+.active-left {
+    top: -500px;
+}
+
+.active-right {
+    top: 700px;
+}
+
+.btns {
+    height: 25px;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .btn-close {
+       display: none;
+    }
+    .active-open-btn-mbl{
+        display: none;
+    }
+    .btn-open{
+        left: 43%;
+        top: -10%;
+        z-index: 10;
+    }
+
+    .middle-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        /* animation-duration: 7s;
+        animation-fill-mode: both;
+        animation-name: fadeIn; */
+    }
+
+    /* @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        10% {
+            opacity: 0.1;
+        }
+
+        20% {
+            opacity: 0.2;
+        }
+
+        30% {
+            opacity: 0.3;
+        }
+
+        40% {
+            opacity: 0.4;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        60% {
+            opacity: 0.6;
+        }
+
+        70% {
+            opacity: 0.7;
+        }
+
+        80% {
+            opacity: 0.8;
+        }
+
+        90% {
+            opacity: 0.9;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    } */
+}
